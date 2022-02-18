@@ -26,7 +26,8 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
     otherSprite.destroy(effects.fire, 500)
-    scene.cameraShake(8, 500)
+    scene.cameraShake(100, 500)
+    music.bigCrash.play()
 })
 let enemy_ship: Sprite = null
 let projectile: Sprite = null
@@ -52,7 +53,7 @@ mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 mySprite.setStayInScreen(true)
-info.setLife(1)
+info.setLife(3)
 game.onUpdateInterval(2000, function () {
     enemy_ship = sprites.create(img`
         . . . . . . . . . . . . . . . . 
