@@ -22,6 +22,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
     projectile.destroy()
     otherSprite.destroy()
     info.changeScoreBy(100)
+    music.pewPew.play()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     info.changeLifeBy(-1)
