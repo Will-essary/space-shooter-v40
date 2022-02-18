@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.20/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.0.1","target":"arcade","targetVersion":"1.8.20","repo":"will-essary/space-shooter-v40"}
-// total=1571726 new=6.60% cached=88.16% other=5.23%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.20/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.1.0","target":"arcade","targetVersion":"1.8.20","repo":"will-essary/space-shooter-v40"}
+// total=1571721 new=6.60% cached=88.16% other=5.23%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -27,7 +27,7 @@ const __this = runtime;
 const pxtrt = pxsim.pxtrt;
 let yieldSteps = 1;
 ectx.setupYield(function() { yieldSteps = 100; })
-pxsim.setTitle("Space Shooter v4.0");
+pxsim.setTitle("Space Shooter");
 pxsim.setConfigData({
  "37": 160,
  "38": 120
@@ -481,7 +481,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P23742(s) {
+function _main___P23987(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1028,13 +1028,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P23742.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P23742.continuations = [ 41,42,43,44 ]
+_main___P23987.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P23987.continuations = [ 41,42,43,44 ]
 
-function _main___P23742_mk(s) {
+function _main___P23987_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P23742, depth: s.depth + 1,
+        parent: s, fn: _main___P23987, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -52845,5 +52845,5 @@ const sprites_BaseSpriteSayRenderer__C2048_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["projectile___23541","mySprite___23547","enemy_ship___23582"])
 
-return _main___P23742
+return _main___P23987
 })
